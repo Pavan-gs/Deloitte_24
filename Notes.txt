@@ -1,0 +1,98 @@
+Version control systems
+====================
+
+Centralised Version Control Systems
+Distributed Version Control Systems
+
+Git --> Desktop based application/repository
+Github --> Cloud based secured storage repository [collaboration & version controlling], Opensource, Secure cloud storage
+
+Fork a repository  --> To create a copy of a repository in your account
+Download Zip / git Clone --> To copy the reposiroty into your local machine
+git clone "https://your git repo link"
+
+Pull request --> To notify the changes to the author and merge pull request/changes in order to approve / adopt or reject
+the changes made by the collaborator
+
+Git commands
+============
+ Right click on a directory and choose git bash here
+OR
+open git bash, mkdir <folder_name>, cd <folder_name>
+
+git init --> To create an empty git repository locally
+vi newfile
+insert --> i
+esc+colon wq --> esc: wq (to exit editor)
+git add newfile --> To add a file to git repo locally
+git status --> Show files which are not committed/untracked
+git commit  -m "some message here" --> To commit/save a file into git repo locally
+git status
+
+To connect remote origin with local
+=============================
+git remote add origin "https link of your remote repo" --> To connect to remote repo
+git pull origin main  --allow-unrelated-histories   --> To pull the files from remote to local repo
+git status
+
+vi newfile
+edit the file taken from remote
+
+git add newfile
+git commit  -m "saved"
+git status
+
+authentication is required
+git push origin master --> We are pushing the modified file back into remote repo, this will create a pull request
+
+git fetch --> To pull the files from remote to local without merging existing files with same names 
+git show --> 
+
+# Versioning
+==========
+git tag <version_no> --> To tag a recent version of the file
+git tag --> To show all the tags
+git show <tag_id> --> To see the content of that version
+git tag  -a v6.8 -m "comment" --> Annotated tag
+
+git log  -n --> To see n number of last commits
+git checkout  -b  <branch_name> --> To create a new branch and navigate to that branchgit branch --> To list the branches available 
+
+git stash  --> To temporarily save changes as a buffer
+git stash list
+git stash apply <stash_id> --> To retrieve changes
+git stash pop<id> --> To delete changes
+
+git config --> Get and set to control
+git config  --global user.name "your_name"
+git config  --global user.name  --> To view the name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
