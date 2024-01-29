@@ -1,0 +1,16 @@
+/* ACTIVITIES */
+
+/* 1) How many unique departments have employees currently working in them?
+
+2)	For employees who quit the organization, find out how many years the employees were employed. 
+Assume that the year consists of 365.25 days. 
+Also retrieve the EMPLOYEE_ID, JOB_ID, START_DATE, and END_DATE for these employees 
+
+3)	Query the JOBS table and return a single expression of the form The Job Id for the <job_title’s> job is: <job_id>. 
+Take note that the job_title should have an apostrophe and an “s” appended to it to read more naturally. 
+A sample of this output for the organization president is: “The Job Id for the President’s job is: AD_PRES.” 
+Alias this column expression as “Job Description” using the AS keyword.  */
+
+/* Restricting data */
+
+/* WHERE, BETWEEN, LIKE, IN , AND, OR, NOT, NULL */
