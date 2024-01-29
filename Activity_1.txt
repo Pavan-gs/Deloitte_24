@@ -14,3 +14,23 @@ Alias this column expression as “Job Description” using the AS keyword.  */
 /* Restricting data */
 
 /* WHERE, BETWEEN, LIKE, IN , AND, OR, NOT, NULL */
+
+/* ACTIVITIES */
+
+/* 1. RETRIEVE A LIST OF DEPARTMENT NAMES THAT ENDS WITH "ING" AND SECOND CHARACTER IS "A"
+
+2. Write a query that extracts the JOB_TITLE, MIN_SALARY, and MAX_SALARY columns, 
+as well as an expression called VARIANCE, which is the difference between the MAX_SALARY and MIN_SALARY values, 
+for each row. The result should include only JOB_TITLE values that contain either the word “President” or “Manager.” 
+Sort the list in descending order based on the VARIANCE expression. If more than one row has the same VARIANCE value, then, 
+sort these rows by JOB_TITLE in reverse alphabetic order. 
+
+3) A common computation performed by the Finance department relates to the calculation of taxes levied upon an employee. 
+The tax deducted per employee is calculated by obtaining the annual salary for the employee and the current tax rate, 
+which may vary from year to year as per the regulations laid from the ministry of finance. 
+Write a reusable query for the current tax rate and for an employee_id as input, return the EMPLOYEE_ID, 
+FIRST_NAME, SALARY, ANNUAL SALARY,TAX_RATE, and the TAX AMOUNT */
+
+
+
+
