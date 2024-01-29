@@ -31,6 +31,22 @@ which may vary from year to year as per the regulations laid from the ministry o
 Write a reusable query for the current tax rate and for an employee_id as input, return the EMPLOYEE_ID, 
 FIRST_NAME, SALARY, ANNUAL SALARY,TAX_RATE, and the TAX AMOUNT */
 
+/* ADD_MONTHS, NEXT_DAY, LAST_DAY */
 
+/* 
+1. Print the hire date in the format "01-Jan-2022"
+2. Print last name, hire date in the format, "1st of jan 2022" */
+
+/* 1. Envelope printing restricts the addressee field to 16 characters. Ideally, 
+the addressee field contains employees’ FIRST_NAME and LAST_NAME values separated by a 
+single space. When the combined length of an employee’s FIRST_NAME and LAST_NAME exceeds 15 characters, 
+the addressee field should contain their formal name. An employee’s formal name is made up of the 
+first letter of their FIRST_NAME and the first 14 characters of their LAST_NAME. You are required to retrieve 
+a list of FIRST_NAME and LAST_NAME values and formal names for employees where the combined length of FIRST_NAME 
+and LAST_NAME exceeds 15 characters. 
+
+2. Write a Query that displays the employee number, hire date, number of months employed, six-month review date, 
+first Friday after hire date, and the last day of the hire month for all employees 
+who have been employed for fewer than 150 months and working for department 50  */
 
 
