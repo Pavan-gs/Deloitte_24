@@ -50,3 +50,15 @@ first Friday after hire date, and the last day of the hire month for all employe
 who have been employed for fewer than 150 months and working for department 50  */
 
 
+/* ACTIVITIES 
+
+1)	The company is planning a recruitment drive and wants to identify the days of the week on which 20 or more staff members were hired. 
+Your report must list the days and the number of employees hired on each of them.
+
+2) Analysis of staff turnover is a common reporting requirement. You are required to create a report containing the number of employees who left their jobs, grouped by the year in which they left. The jobs they performed are also required. 
+The results must be sorted in descending order based on the number of employees in each group.
+The report must list the year, the JOB_ID, and the number of employees who left a particular job in that year.
+
+3) Calculate the average length of all the country names. Any fractional components must be rounded to the nearest whole number. */
+
+
