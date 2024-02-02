@@ -1,0 +1,93 @@
+Power Apps
+-----------------
+
+Power Query : Data Transformation Engine
+
+Power Pivot : Data modelling & calculation engine. [DAX] --> Data Analytics Expression language
+
+Power View :  Connect with the data sources producing filter for the data visualization
+
+Power Map : Geospatial data in 3d mode.
+
+Power BI Desktop : One stop solution
+
+Power Q&A : Natural Language Processing based query engine
+
+Visualisation, data, reports, dashboards
+
+Power BI                                                  Tableau
+------------                                                 ------------
+Integration with R&
+MS office 365		              Better Integration, R, Python[tabpy], Java, C++
+
+
+NLP based engine			NA
+
+
+2011				2004
+
+
+$10 month			$35 month
+
+
+Smaller community			Bigger community
+
+Azure cloud			Python ML
+
+Limited data sources		Wide data sources AWS Redshift, Hadoop, Cloudera
+SQL,Access DB, oracle,
+DB2, Mysql			
+
+PowerBI Service --> SAAS 
+
+# Advantages
+
+1. Real time dashboards & reports update
+
+2. prebuilt dashboards
+
+3. Secure, live connection
+
+4. Integration with Microsoft products
+
+5. Easy Data Exploration using Natural query language
+
+6. Fast Deployment.
+
+DAX
+------
+Create calculated fields and measures
+
+1. Data transformation in Power Query --> String functions, Number functions, Split columns, filters, Grouping etc.
+
+2. Tool tip
+
+3. Slicer
+
+4. Quick measures
+
+5. Q&A
+
+6. Creating Data model --> Degree of relationship
+
+7. Analyse Function to get intelligent interpretations of plots
+
+8. Summarize
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
