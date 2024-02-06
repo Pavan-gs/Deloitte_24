@@ -1,0 +1,46 @@
+A. Create Database
+-------------------------
+create database retail;
+
+B. Select Database
+------------------
+use retail;
+
+C. Create table for storing transactional records
+-------------------------------------------------
+create table txnrecords(txnno INT, txndate STRING, custno INT, amount DOUBLE, 
+category STRING, product STRING, city STRING, state STRING, spendby STRING)
+row format delimited
+fields terminated by ','
+stored as textfile;
+
+D. Load the data into the table
+-------------------------------
+E. Describing metadata or schema of the table
+---------------------------------------------
+F. Counting no of records
+-------------------------
+G. Counting total spending by category of products
+--------------------------------------------------
+H. 10 customers
+--------------------
+I. Create partitioned table
+---------------------------
+create table txnrecsByCat(txnno INT, txndate STRING, custno INT, amount DOUBLE,
+product STRING, city STRING, state STRING, spendby STRING)
+partitioned by (category STRING)
+clustered by (state) INTO 10 buckets
+row format delimited
+fields terminated by ','
+stored as textfile;
+
+J. Configure Hive to allow partitions
+-------------------------------------
+
+K. Load data into partition table
+----------------------------------
+
+==========================
+find avg(sales) based on age group
+==========================
+
