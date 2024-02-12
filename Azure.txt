@@ -1,0 +1,277 @@
+IAAS --> Virtual Network / Virtual Machines
+
+PAAS --> Cloud services
+
+SAAS --> App services
+
+Compute
+========
+Virtual Machines
+Cloud Services
+Service Fabric
+Batch
+Scheduler
+
+Network
+=======
+Virtual Network
+Traffic manager
+Express route
+
+Identity & Access Management
+==========================
+Active Directory
+Key Vault
+Multi-factor auth
+
+Media & CDN
+============
+CDN
+Media Services
+
+Web & Mobile Services
+===================
+Web Apps
+Mobile Apps
+API apps/management
+
+Analytics
+=======
+HD insights
+ML
+Streaming
+Data factory
+Event hub
+
+Storage & Back up
+===============
+
+Az blobs
+Files
+Back up
+Site recovery
+
+Data
+====
+sql
+cosmos
+redis
+
+Integration
+=========
+Service Bus
+Biztalk
+Storage queues
+
+Management
+===========
+Automation
+Portal
+Key-vault
+
+Commerce
+=========
+Store/market place
+VM depot
+
+Developer services
+================
+Visual Studio
+App insights
+
+
+Serverless computing
+===================
+Azure functions
+Logic apps
+Event Grid
+
+ML
+===
+AZ ml studio
+
+VM
+===
+Virtual machine is a virtual computer with hardware / software etc.
+
+Isolation 
+Internet comm
+Traffic filtering
+Virtual network
+On-premise connectivity
+
+Physical layer --> Transmits raw stream over the physical medium
+
+Data link layer --> Defines the format of the data on the network
+
+Network layer --> Decides the physical path of the data
+
+Transport layer --> TCP / UDP --> Encryption
+
+Session Layer --> connections , controls and sessions
+
+Presentation layer --> Ensure the data is in usable format
+
+Application layer --> Application can access the network services
+
+Socket --> IP + Port
+
+http --> 80, https --> 443, ssh --> 22
+
+Virtual Network --> Vnet
+====================
+
+-.-.-.-
+0-255.0-255.0-255.0-255
+
+0.0.0.0   to 255.255.255.255
+
+192.168.0.0 to 192.168.0.255 = 256
+
+192.168.170.0 to 192.168.170.255 = 192.168.170.0/24
+
+CIDR --> Classless Inter domain routing 
+
+192.168.0.0
+192.168.0.1
+192.168.0.2
+192.168.0.3................... 192.168.0.256
+
+172.16.0.0 to 172.16.255.255 --> 172.16.0.0/16 --> 256*256
+10.0.0.0/8 = 256*256*256
+
+1. Create NSG and enable properties
+2. Create Vnet
+3. Create Subnets
+4. Create VM under subnets
+
+Virtual network --> A network to represent your network in cloud
+
+Subnet --> A sub network
+
+NSG --> Like firewalls, which is reponsible for filtering incoming, outgoing traffic from your VM's
+
+Virtual Machines --> Instance of a computer
+
+Security
+=======
+
+NSG --> Like firewalls, which is reponsible for filtering incoming, outgoing traffic from your VM's
+ASG --> Groupe the servers with similar filters/rules
+
+Identity Services
+==============
+Authentication
+Authorization
+
+Azure Active Directory
+===================
+Cloud based Identity and access management service
+
+Authentication
+Single Sign On [SSO]
+Application management
+B2B
+B2C
+Device management
+Azure Multi Factor Authentication
+
+Security
+=======
+Key-vault  --> Secrets management, Key management, Certificate management, Storing secrets with a hardware security model
+
+Azure Information Protection [AIP]
+Azure advanced threat protection (ATP)
+
+Governance
+==========
+Az policy 
+Policy initiatives
+
+ 	Definition
+	Assignments
+RBAC 
+Resource Locks --> Cannot Delete, Read only 
+Blueprints
+
+Tags
+====
+Metadata of resources
+
+Azure Monitor
+============
+Collect, analyse & imlement on data from cloud to improve performance.
+
+Health centre
+=========== 
+Analyse, Respond, visualise, Integrate
+
+Subscription
+==========
+Dev
+Testing
+Production
+
+Cost Management
+===============
+Resource Type
+Service
+Location
+
+Tools
+====
+Calculator
+advisor
+HUB
+Cost analysis
+Cost alerts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
