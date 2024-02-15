@@ -45,7 +45,6 @@ Event hub
 
 Storage & Back up
 ===============
-
 Az blobs
 Files
 Back up
@@ -78,7 +77,6 @@ Developer services
 ================
 Visual Studio
 App insights
-
 
 Serverless computing
 ===================
@@ -164,7 +162,7 @@ Identity Services
 Authentication
 Authorization
 
-Azure Active Directory
+Azure Active Directory      --> MIcrosoft Entra ID
 ===================
 Cloud based Identity and access management service
 
@@ -200,7 +198,7 @@ Metadata of resources
 
 Azure Monitor
 ============
-Collect, analyse & imlement on data from cloud to improve performance.
+Collect, analyse & act on data from cloud to improve performance.
 
 Health centre
 =========== 
@@ -225,6 +223,230 @@ advisor
 HUB
 Cost analysis
 Cost alerts
+
+Azure Storage
+============
+paas
+Managed cloud storage service --> highly available, durable, scalable & redundant sorage
+Files, Messages, Tables, discs
+
+1 subscription --> 100 accounts --> 1 account * 500 tb
+
+3 categories
+
+1. Storage for virtual machienes (disks, files)
+2. Unstructured data (video, audio, images, messages, text) --> blobs and datalake stores
+3. Structured (Like no sql db tables, sql db, cosmos db)
+
+Blob storage --> Object storage --> Binary, text, image, video, audio data, data for back up, disaster recovery etc.
+
+Files --> Highly available network file shares, uses SMB (Standard server message block) protocol (migration)
+
+Tables --> Structured nosql data in cloud ---> Key & value pair --> Schemaless design
+
+Queues --> Store and retrieve messages --> 64 kb 
+
+Standard --> Backed up by HDD (magnetic drives), Lowest cost per GB, Best for apps that needs bulk storage, data accessing is infrequent
+
+Premium --> SDD (Solid state drives), low latency performance, best for intense i/o like d/b's
+
+General purpose v2 --> Blob, Tables, Queues, Files
+Blob --> Block blob, page blob, File shares
+
+Performance Tiers
+-=============-
+Hot --> Store data that is accessed frequently (Highest storage cost, lowest read cost)
+cool --> Infrequent data access (atleast 30 days) --> Storage cost is less, read cost is more
+Cold --> Atleast 90 days
+Archive --> rare data access (15-99 yrs/ atleast 180 days) --> Lowest cost, read cost is highest 
+
+Blob containers & categories
+========================
+Containers --> Multiple blobs under a container, Unstructured data  
+
+Block blob ->> Any video, audio, image files
+
+Page blob --> random access files upto 8 tb --> virtual hard drive (vhd) and serves as a disk for vm
+
+Append blob --> blocl blob but optimized for append operations (log data from vm)
+
+Storage replications
+--==============--
+LRS --> 3 copies of data in 3 storage boxes within same data center
+ZRS --> 3 copies of data in multiple data centers within same region
+GRS --> 3 copies of data in primary region, and 3 copies in a secondary geo location --> 6 copies
+RA-GRS --> GRS with read only access to secondary data center
+GZRS -->  3 copies of data in 3 highly available primary zone using ZRS and 3 copies in secondary region
+RA-GZRS --> Read only GZRS
+
+Storage Explorer
+Creating Storage Account
+Creating containers & Blobs
+
+Change tiers
+Key Access
+SAS (Shared Access Signature) URI
+
+Snapshot
+Logic apps
+
+Azure Datalake storage (Gen 2)
+==========================
+
+Data lake --> Hadoop compatible, Optimizer drivers
+Blob storage --> Low cost, Storage tiers (Hot, cold, cool, Archive), High availability & disaster recovery
+
+Datalake Gen2 vs Blob
+==================
+
+Access tiers --> both
+Top level Organisation --> both (containers)
+Lower level organisation --> blob (virtual directory), Datalake Gen2 (Directory)
+Data container --> Blob, File
+
+Data Lake doesn't provide --> soft delete, static website, Snapshots, Immutable storage
+Blob doesn't provide --> Access Control Lists
+
+Azure SQL
+=========
+Convenient
+Cost
+Scale
+Security
+Administration
+SLA--> 99.99% uptime
+
+Azure
+=====
+Hardware, Virtualisation, Datacenter, OS, Back up & restoring, HA, Auditing,Security, scaling, Installation & patching
+
+DBA or developers 
+===============
+Database design, Development, Capacity planning, Migrations, Performance tuning, Cost optimization, Automation, Maintanance, db level configurations
+
+Deployment models
+=================
+Single database --> Isolated & portable, own set of resources, Contained database
+
+Elastic pool  --> Collection of db's, shared set of resources, Cost effective solution, Upredictable usage patterns
+
+Managed Instances--> 100% compatibility with latest sql server, Lift and shift on premises, All Paas features 
+
+Azure Cosmos DB
+==============
+Nosql db --> Columnar (Hbase, Cassandra), Document (Mongo, Cosmos), Graph (neo4j, Tiger graph), Key value pairs (dynamo db)
+
+{
+"name":"fsd",
+"sal":4324,
+"city:"hjvkds"
+}
+
+Fully managed, fast response, high availability, scalable, automatic updates
+API's --> sql, mongo, cassandra, gremlin, table, post gre
+
+API's --> dot net, node js, python, java
+
+Azure Synapse Analytics
+====================
+Enterprise data warehousing & Big data analytics
+
+SQL (Synapse sql)
+Spark (processing)
+Pipelines (Integration) --> ETL/ELT (ADF)
+
+Integration with Cosmos DB, ML, Power BI
+
+Synapse Workspace
+================
+To build cloud based enterprise analytics solutions
+
+Attached with ADLS Gen2 and File system
+
+SQL --> SQL pool--> Helps you run t-sql scripts on data in linked services
+
+Serverless --> built-in --> use sql without reserving capacity.
+Billing is based on the amount of data processed to run the query
+
+Openrowset --> Allows you to access files in Az storage and return the content as a set of rows
+
+Dedicated sql pool --> Consumes billable resources if it's active, pause the pool to reduce the costs
+and this is associated with a dedicated sql db.
+
+Data Explorer pools --> Data Explorer pools can be used to run near real-time analytics on large volumes of logs and time series data streaming from applications, websites, IoT devices, and more. 
+
+Spark pool
+=========
+Notebook  --> Python, Scala, Pyspark,C#, sql, R
+Spark job definitions --> To run batch spark jobs using jar files 
+
+Linked Services
+=============
+Connection string that defines the connection information needed for the workspace to connect to external resources.
+
+Pipelines
+========
+To move data between services & orchestrate activities
+
+Logical grouping of activities that performs a task together
+Activities defines actions within pipelines --> copying data, running notebook or a sql/spark program
+
+Triggers
+Integration dataset
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
