@@ -1,0 +1,61 @@
+Machine Learning
+===============
+
+Supervised Learning   --> Predictive models
+Unsupervised Learning --> Grouping data based on similarities
+
+Predictive models
+===============
+Independent variables / Predictor variables / Input variables --> X
+Target Variable/Dependent / Y / Op variable --> Y
+
+Mathematical / Statistical relationship between all the x and Y variable
+
+Linear models   --> Linear Regression, Logistic Regression, Polinomial linear regression
+Non-linear models --> Squared,exponential, logarithmic, square root (linear regression), Decision Tree, SVM, KNN
+Ensemble models --> Bagging (RF), Boosting --> ADA, GB, XGboost
+
+Target Variables --> Continuous , Discrete
+
+Steps to build a predictive model
+===========================
+EDA & Cleaning
+BI
+
+Decide the Target Variable
+Distribution of Y variable
+Split the data --> training, testing
+Build the model
+Look at the model's stats
+testing
+evaluate
+
+Data preparations
+===============
+Data transformations --> Standardization, Normalization
+Feature Selection --> P-value, RFE, AUC-ROCR
+Sampling --> K-fold CV
+Class imbalance --> Over sampling, Under sampling, SMOTE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
